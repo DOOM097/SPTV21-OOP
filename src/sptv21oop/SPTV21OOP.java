@@ -1,21 +1,20 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package sptv21oop;
 
-/**
- *
- * @author user
- */
-public class SPTV21OOP {
+import myclasses.Author;
+import myclasses.Book;
 
-    /**
-     * @param args the command line arguments
-     */
+public class SPTV21OOP {
     public static void main(String[] args) {
-        // TODO code application logic here
+        Author author1= new Author();
+        author1.setFirstname("Aleksandr");
+        author1.setLastname("Pushkin");
+        Book book1=new Book();
+        book1.setCaption("Yevhenii Onegin");
+        Author[] authors = new Author[1];
+        authors[0]= author1;
+        book1.setAuthors(authors);
+        System.out.println(book1.toString());
+        
     }
     
 }
